@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
+    <title>sourdough.io</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <link
@@ -11,5 +11,55 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 class="title">rise calculator</h1>
+      <section class="main-container">
+        <div class="calculate-container">
+          <form id="calc-form" action="">
+            <label for="flour"
+              ><input
+                type="number"
+                name="flour"
+                id="flour"
+                placeholder="900"
+              />Flour (in grams)</label
+            >
+            <label for="water"
+              ><input
+                type="number"
+                name="water"
+                id="water"
+                placeholder="680"
+              />Water (in grams)</label
+            >
+            <label for="starter"
+              ><input
+                type="number"
+                name="starter"
+                id="starter"
+                placeholder="100"
+              />Starter (in grams)</label
+            >
+            <label for="temp"
+              ><input
+                type="number"
+                name="temp"
+                id="temp"
+                placeholder="74"
+              />Temperature (in fareinheit)</label
+            ><label for="salt"
+              ><input type="checkbox" name="salt" id="salt" />Using salt?
+              (standard is 2%)</label
+            >
+            <div class="button-container">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+        <div class="result-container"></div>
+      </section>
+    </div>
+  </body>
 </html>
